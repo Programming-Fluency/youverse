@@ -441,6 +441,10 @@ Read-only action functions (e.g. `getHomeVideos`, `getChannelPageData`) may skip
 - `params` and `searchParams` are `Promise`s — always `await` them in page/layout components.
 - `redirect()` throws an internal `NEXT_REDIRECT` error. Any `try/catch` wrapping a call that might redirect must re-throw when the digest starts with `NEXT_REDIRECT` (or use `isRedirectError` from `next/dist/client/components/redirect-error`), otherwise the redirect is silently swallowed.
 - Before writing code that touches an unfamiliar Next.js API, check `node_modules/next/dist/docs/` for this version's actual behavior — do not assume training-data conventions.
+- Every route segment that has a `page.tsx` — including nested routes, not just top-level ones — must also have a `loading.tsx` and an `error.tsx` in the same folder. Check `node_modules/next/dist/docs/01-app/03-api-reference/03-file-conventions/loading.md` and `.../error.md` for this version's exact conventions before writing either (this version's `error.tsx` takes a stable `retry` prop, not just the older `reset`).
+  - `loading.tsx` must be a real skeleton shaped like the route's actual content (matching layout/proportions of what will render — e.g. a two-field form skeleton for a sign-in page, a video-grid skeleton for a feed page) — never a generic spinner or "Loading..." text.
+  - `error.tsx` must be a Client Component (`"use client"`) with route-relevant copy and an icon that fit what that specific route does — never a generic "Something went wrong" placeholder shared verbatim across unrelated routes. Use the shadcn `Empty` component (icon, title, description, a "Try again" button calling `retry()`).
+  - A route group folder (e.g. `(main)`) may have its own `loading.tsx`/`error.tsx` as the fallback for pages nested under it that don't define their own, but a nested route with distinct content still gets its own more specific pair rather than relying on the ancestor's.
 
 ---
 
