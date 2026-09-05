@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { HomeIcon } from "lucide-react";
+import { UsersIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Empty,
@@ -27,11 +27,11 @@ export default function Error({
     <Empty className="min-h-[60vh]">
       <EmptyHeader>
         <EmptyMedia variant="icon">
-          <HomeIcon />
+          <UsersIcon />
         </EmptyMedia>
-        <EmptyTitle>Your feed couldn&apos;t load</EmptyTitle>
+        <EmptyTitle>Your subscriptions couldn&apos;t load</EmptyTitle>
         <EmptyDescription>
-          Something went wrong loading your subscribed and recommended videos.
+          Something went wrong loading videos from the channels you follow.
           Please try again.
         </EmptyDescription>
       </EmptyHeader>
