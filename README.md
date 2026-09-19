@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Build a Full-Stack YouTube Clone with AI-Assisted Development
 
-## Getting Started
+Learn how to build and deploy a full-stack modern web application from scratch using a structured AI development harness and workflow.
 
-First, run the development server:
+In this complete, step-by-step masterclass, we break down how to prompt, architect, code, and deploy a full-featured video-sharing platform (YouTube clone) with Next.js, modern backend services, and automated AI assistance.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Whether you are looking to 10x your coding productivity or master real-world AI-assisted software development, this comprehensive guide takes you through the entire lifecycle—from architecture and harness design to production deployment.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 What You'll Learn
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🏗️ **AI Harness Architecture:** How to configure rules, context, and project directives for accurate AI code generation.
+- 💻 **Full-Stack Development:** Building frontend UI components, state management, and backend API integration.
+- 🗄️ **Database & Authentication:** Structuring schemas, managing user data, and securing your application.
+- 🚀 **Deployment & Optimization:** Taking your app from local development to production with best practices.
+- ⚡ **Workflow Efficiency:** Practical prompt engineering techniques to eliminate hallucination and build production-ready code.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⏱️ Timestamps
 
-## Learn More
+| Timestamp | Topic |
+|---|---|
+| 00:00:00 | Intro |
+| 00:05:29 | AI Harness |
+| 00:11:57 | Setup |
+| 00:21:43 | Workflow |
+| 00:24:55 | Agents.md |
+| 00:32:56 | Agent Skills |
+| 00:34:53 | SEO & Metadata |
+| 00:40:55 | Database |
+| 00:57:36 | Authentication |
+| 01:20:02 | Navbar |
+| 01:23:32 | Adjusting Specs |
+| 01:28:23 | Channel & Dashboard |
+| 01:37:56 | Home Feed |
+| 01:40:17 | Watch Page |
+| 01:42:08 | Settings |
+| 01:43:39 | Deployment |
+| 01:46:26 | Testing |
+| 01:50:08 | Thank You |
 
-To learn more about Next.js, take a look at the following resources:
+## 🔗 Resources & Links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 📂 **Source Code / GitHub Repo:** https://github.com/Programming-Fluency/youverse
+- 💬 **Join the Community / Discord:** https://discord.com/invite/AgAKRtbXsp
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔔 Connect & Subscribe
 
-## Deploy on Vercel
+If you found this tutorial helpful, make sure to like the video, leave a comment with your thoughts, and subscribe to **Programming Fluency 🧑‍💻** for more deep-dive software engineering and AI tutorials!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏷️ Tags
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#WebDevelopment #FullStack #AIWorkflow #Nextjs #Programming #SoftwareEngineering #CodingTutorial
